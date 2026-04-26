@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TATTO ZONE</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style_index.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/4.0.0/uicons-brands/css/uicons-brands.css"/>
+    <link rel="icon" href="img/logo.png" type="image/png">
+  </head>
+  <body>
+    <section class="fondo">
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <div class="logo">
+            <a class="navbar-brand">TATTO ZONE</a>
+          </div>
+          <form class="d-flex" role="search">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#inicio"
+            >
+              iniciar sesion
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#registro"
+            >
+              Registrarse
+            </button>
+          </form>
+        </div>
+      </nav>
+      <div id="container_hero">
+        <div class="hero">
+          <div class="container">
+            <h1 class="text-center mt-5 hero-titulo">
+              Tinta japonesa con significado real
+            </h1>
+            <p class="text-center mt-3 hero-texto">Diseños únicos inspirados en la tradición del Irezumi.
+Cada pieza cuenta una historia, ¿cuál es la tuya?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contenedor-carousel">
+      <h2>CARRUSEL</h2>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/espalda.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Diseños de Espalda</h5>
+              <p>Los mejores tatuajes en espalda para ti</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="img/tatuaje.webp" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Arte Corporal</h5>
+              <p>Tatuajes únicos y personalizados</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="img/pierna.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Tatuajes en Pierna</h5>
+              <p>Diseños exclusivos para tu pierna</p>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="contenedor primario">
+
+      <div class="texto">
+        <h2>TRADICION JAPONESA EN LA PIEL</h2>
+        <p>En el arte del tatuaje japonés, cada trazo tiene un propósito y cada diseño cuenta una historia. Inspirados en la tradición del Irezumi, nuestros tatuajes combinan elementos como dragones, carpas koi, flores de cerezo y máscaras oni para crear piezas llenas de significado y fuerza visual. No se trata solo de tinta sobre la piel, sino de representar valores como la perseverancia, el honor y la transformación. <br> <br> Cada proyecto se trabaja de manera personalizada, respetando la anatomía del cuerpo y manteniendo la esencia de un estilo que ha trascendido generaciones.</p>
+      </div>
+
+    </section>
+
+  <section class="contenedor">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h2>FORMULARIO</h2>
+          <div class="form-login formulario">
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Correo Electronico</label>
+              </div>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Contraseña</label>
+            </div>
+            <br>
+            <div class="form-floating">
+              <input class="form-control" placeholder="" id="floatingTextarea2" style="height: 100px"></input>
+              <label for="floatingTextarea2">Comentario</label>
+              <button type="submit" class="btn btn-outline-danger btn-modal">
+                Enviar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        
+          <div class="cards">
+            <div class="card">
+              <img src="img/arms tatto.jpg" alt="">
+            </div>
+
+            <div class="card">
+              <img src="img/back tatto.jpg" alt="">
+            </div>
+            
+            <div class="card">
+              <img src="img/legs tatto.jpg" alt="">
+            </div>
+            
+            <div class="card">
+              <img src="img/hand tatto.jpg" alt="">
+            </div>
+
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+<footer class="bg-dark text-white py-4 contenedor-footer">
+  <div class="container text-center">
+    <p>© 2026 TATTO ZONE</p>
+  </div>
+</footer>
+
+
+
+
+    <div
+      class="modal fade"
+      id="inicio"
+      tabindex="-1"
+      aria-labelledby="inicioLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+
+            <div id="img-login">
+              <img src="img/inicio.jpg" alt="" />
+              <button type="button" class="btn btn-outline-danger btn-modal" data-bs-toggle="modal" data-bs-target="#registro">
+                registrarse
+              </button>
+            </div>
+            
+
+            <div id="login">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="inicioLabel">INICIA SESION</h1>
+              </div>
+
+              <div class="form-login">
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInput">Correo Electronico</label>
+                </div>
+
+                <div class="form-floating">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="floatingPassword"
+                    placeholder="Password"
+                  />
+                  <label for="floatingPassword">Contraseña</label>
+                </div>
+              </div>
+              <p><a id="olvidar" href="#">Olvidaste la Contraseña?</a></p>
+            <button type="button" class="btn btn-outline-danger btn-modal" onclick="iniciarSesion()">
+              iniciar Sesion
+              </button>
+              <p>O Inicia con</p>
+
+              <div class="modal-iconos">
+                <a id="google" href="https://www.google.com/?hl=es"></a>
+                <a id="facebook" href="#"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="registro"
+      tabindex="-1"
+      aria-labelledby="inicioLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content r1">
+          <div class="modal-body">
+            <div id="regis">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="inicioLabel">REGISTRARSE</h1>
+              </div>
+
+              <div class="form-login registro">
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInput">Correo Electronico</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingPassword"
+                    placeholder="Password"
+                  />
+                  <label for="floatingPassword">Contraseña</label>
+                </div>
+                
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingPassword"
+                    placeholder="Password"
+                  />
+                  <label for="floatingPassword">Confirmar Contraseña</label>
+                </div>
+              </div>
+              <button type="button" class="btn btn-outline-danger btn-modal">
+                registrarse
+              </button>
+              <p>O Inicia con</p>
+
+              <div class="modal-iconos">
+                <a id="google" href="https://www.google.com/?hl=es"></a>
+                <a id="facebook" href="#"></a>
+              </div>
+            </div>
+
+            <div id="img-registro">
+              <img src="img/registro.jpeg" alt="" />
+              <button type="button" class="btn btn-outline-danger btn-modal" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#inicio">
+                iniciar Sesion
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
